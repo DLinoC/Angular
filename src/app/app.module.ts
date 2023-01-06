@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 // import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
+import { ContComponent } from './cont/cont.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactReactiveComponent } from './contact-reactive/contact-reactive.co
     // AnswerComponent,
     // CalculadoraComponent,
     ContactComponent,
-    ContactReactiveComponent
+    ContactReactiveComponent,
+    ContComponent
   ],
   imports: [
     BrowserModule,
