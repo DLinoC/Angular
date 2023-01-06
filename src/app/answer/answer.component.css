@@ -1,0 +1,10 @@
+.answer{
+    width: 37.8rem;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-left: 6px solid #299af4;
+    background-color: #ddffff;
+}

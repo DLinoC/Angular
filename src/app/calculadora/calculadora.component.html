@@ -1,0 +1,40 @@
+<main class="container my-5 clase">
+
+    <!-- Primer numero -->
+    <div class="row g-3 align-items-center mb-3">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Ingrese el primer valor</label>
+        </div>
+        <div class="col-auto">
+          <input [(ngModel)]="numero1" type="number" id="inputPassword6" class="form-control primer" aria-describedby="passwordHelpInline">
+        </div>
+    </div>
+
+    <!-- Segundo numero -->
+    <div class="row g-3 align-items-center mb-3">
+        <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Ingrese el segundo valor</label>
+        </div>
+        <div class="col-auto">
+            <input [(ngModel)]="numero2" type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+    </div>
+
+    <!-- Seleccione valor -->
+    <select [(ngModel)]="num" class="form-select mb-3 selector">
+        <option value="Elige una opción">Elige una opción</option>
+        <option value="1">Sumar</option>
+        <option value="2">Restar</option>
+        <option value="3">Multiplicar</option>
+        <option value="4">Dividir</option>
+    </select>
+    
+    <!-- Select -->
+    <div  [ngSwitch]="num">
+        <div [ngStyle]="{'color':'blue'}" *ngSwitchCase="1">La suma es: {{numero1 + numero2}}</div>
+        <div [ngStyle]="{'color':'red'}" *ngSwitchCase="2"> La resta es: {{numero1 - numero2}}</div>
+        <div [ngStyle]="{'color':'white'}" *ngSwitchCase="3"> La multiplicacion es: {{numero1 * numero2}}</div>
+        <div [ngStyle]="{'color':'#B7950B'}" *ngSwitchCase="4">La division es: {{numero1 / numero2}}</div>
+        <div [ngStyle]="{'color':'#FC0000'}" *ngSwitchDefault><span [ngStyle]="{'color':'black'}">Resultado: </span>{{noresultado}}</div> 
+    </div>
+</main>

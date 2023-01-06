@@ -1,0 +1,15 @@
+.calculator{
+    width: 500px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-success {
+    background-color: #70ad47;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+    color: white;
+}
+

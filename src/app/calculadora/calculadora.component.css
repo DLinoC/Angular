@@ -1,0 +1,13 @@
+.clase{
+    background: rgb(7,224,186);
+    background: linear-gradient(90deg, rgba(7,224,186,1) 0%, rgba(94,242,6,1) 35%, rgba(240,229,10,1) 100%);
+    max-width: 600px;
+    justify-content: center;
+    margin: auto;
+}
+.primer{
+    width: 220px;
+}
+.selector{
+    width: 395px;
+}

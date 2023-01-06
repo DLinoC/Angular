@@ -1,0 +1,11 @@
+h1 {
+    max-width: 100%;
+    color: aliceblue;
+    background-color: #00416A;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 10%;
+}   
