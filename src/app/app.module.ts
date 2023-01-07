@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 // import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
+import { PipesPersoComponent } from './pipes-perso/pipes-perso.component';
+import { PipesDiapoComponent } from './pipes-diapo/pipes-diapo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContactReactiveComponent } from './contact-reactive/contact-reactive.co
     // AnswerComponent,
     // CalculadoraComponent,
     ContactComponent,
-    ContactReactiveComponent,
+    ContactReactiveComponent, 
+    PipesPersoComponent,
+    PipesDiapoComponent,
   ],
   imports: [
     BrowserModule,

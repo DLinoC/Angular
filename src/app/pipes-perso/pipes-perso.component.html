@@ -1,0 +1,16 @@
+<h1 class="text-warning">Ejercicio 03</h1>
+<div class="container mx-auto mt-5 p-4 border border-info">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="holaaaaaaaa" [(ngModel)]="fecha">
+        <label for="floatingInput">Ingresar el mes, día, año y hora(00:00).</label>
+        <div class="text-center">
+            <button type="button" class="btn btn-danger my-3" (click)="calcular()">Calcula el Tiempo</button>
+        </div>
+        
+        <p >Fecha Actual: {{fa | date:'shortDate'}}</p>
+
+        <p>Resultado - Fecha: {{fecha | date: 'medium'}}</p>
+
+        <p>Final: {{tiempo}}</p>
+    </div>
+</div>
