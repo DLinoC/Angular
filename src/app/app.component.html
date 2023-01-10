@@ -9,8 +9,8 @@
 <!-- <app-calculadora> </app-calculadora> -->
 
 <!-- <app-contact> </app-contact> -->
-<div class="container mt-5">
-    <div class="col d-flex justify-content-center">
+<!-- <div class="container mt-5">
+    <div class="col d-flex justify-content-center"> -->
       <!-- <div class="col-6">
         <app-contact></app-contact>
       </div> -->
@@ -20,8 +20,35 @@
       <!-- <div class="col-6">
         <app-pipes-diapo> </app-pipes-diapo>
       </div> -->
-      <div class="col-6">
+      <!-- <div class="col-6">
         <app-pipes-perso> </app-pipes-perso>
+      </div> -->
+    <!-- </div>
+</div> -->
+<div class="container">
+  <div class="row my-3">
+    <form (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm">
+      <h2 [ngStyle]="{'color':'#1874A5'}">Registro de Personas</h2>
+      <app-form-hijo *ngIf="valores" [values]="valores"></app-form-hijo>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" name="nombre" class="form-control" id="nombre" [(ngModel)]="model.nombre" required>
       </div>
-    </div>
+      <div class="mb-3">
+        <label for="dni" class="form-label">DNI:</label>
+        <input type="number" name="dni" class="form-control" id="dni" [(ngModel)]="model.dni">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="estado_civil">Estado Civil</label>
+        <select class="form-select" name="estado_civil" [(ngModel)]="model.estado_civil">
+          <option selected>Seleccione su estado civil</option>
+          <option value="soltero">Soltero</option>
+          <option value="casado">Casado</option>
+          <option value="divorciado">Divorciado</option>
+          <option value="viudo">Viudo</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
 </div>
